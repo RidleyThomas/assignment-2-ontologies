@@ -11,7 +11,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food">
         <terms:contributor xml:lang="en">Ridley I. Thomas</terms:contributor>
         <terms:license xml:lang="en">Creative Commons Attribution 3.0 (CC BY 3.0)</terms:license>
-        <rdfs:comment xml:lang="en">An ontology about classic Southern recipes most commonly encountered in the Florida Panhandle.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ontology about Thomas family recipes for holidays and special occasions.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -36,6 +36,18 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#citation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#citation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
     
 
 
@@ -189,21 +201,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AllspiceIngredient -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AllspiceIngredient">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#HerbsAndSpicesIngredient"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSpiciness"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <skos:preflabel xml:lang="en">Allspice</skos:preflabel>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient">
@@ -245,365 +242,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQBakedBeansSide">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Side"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQChickenMainDish -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQChickenMainDish">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MainDish"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackPepperIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BrownSugarIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#LemonIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MolassesIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OliveOilIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SaltIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SweetPaprikaIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#TomatoPasteIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#WorcestershireSauceIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackPepperIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BrownSugarIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#LemonIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MolassesIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OliveOilIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SaltIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SweetPaprikaIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#TomatoPasteIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#WorcestershireSauceIngredient"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPorkRibsMainDish -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPorkRibsMainDish">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MainDish"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackPepperIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BrownSugarIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MolassesIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OliveOilIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OreganoIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkRibIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SaltIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#TomatoPasteIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#WorcestershireSauceIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackPepperIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BrownSugarIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MolassesIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OliveOilIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OreganoIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkRibIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SaltIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#TomatoPasteIngredient"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#WorcestershireSauceIngredient"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPulledPorkMainDish -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPulledPorkMainDish">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MainDish"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleCiderVinegarIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BrownSugarIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ButterIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MolassesIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SmokedPaprikaIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#TabascoSauceIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ThymeIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasIngredient"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#WorcestershireSauceIngredient"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BackyardBBQMeal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BackyardBBQMeal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FullMeal"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasMainDish"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQChickenMainDish"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasMainDish"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPorkRibsMainDish"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasMainDish"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPulledPorkMainDish"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSide"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ColeslawSide"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -684,8 +322,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Dried leaves from the bay tree, a plant that is indigenous to Asia Minor.</description>
         <skos:preflabel xml:lang="en">Bay Leaf</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BayLeafIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Dried leaves from the bay tree, a plant that is indigenous to Asia Minor.</owl:annotatedTarget>
+        <citation>http://theepicentre.com/spice/bay-leaf/</citation>
+    </owl:Axiom>
     
 
 
@@ -726,6 +371,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BellPepperIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BellPepperIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#VegetableIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackEyedPeasSide -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackEyedPeasSide">
@@ -759,8 +418,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">A spice made by grinding the dried fruits of a flowering vine in the Piperaceae family. Black peppercorns are made from cooked, unripe fruit.</description>
         <skos:preflabel xml:lang="en">Black Pepper</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackPepperIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">A spice made by grinding the dried fruits of a flowering vine in the Piperaceae family. Black peppercorns are made from cooked, unripe fruit.</owl:annotatedTarget>
+        <citation>https://www.spicejungle.com/the-jungle/where-does-black-pepper-come-from</citation>
+    </owl:Axiom>
     
 
 
@@ -901,8 +567,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Hot"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Dried red cayenne chili peppers that have been ground into a fine powder. Very spicy.</description>
         <skos:preflabel xml:lang="en">Cayenne Pepper</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Dried red cayenne chili peppers that have been ground into a fine powder. Very spicy.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.drgourmet.com/ingredients/cayennepepper.shtml</citation>
+    </owl:Axiom>
     
 
 
@@ -930,22 +603,21 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">The dried seeds of the lovage (sometimes called Chinese celery) plant.</description>
         <skos:preflabel xml:lang="en">Celery Seed</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CelerySeedIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">The dried seeds of the lovage (sometimes called Chinese celery) plant.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.spiceography.com/celery-seeds/</citation>
+    </owl:Axiom>
     
 
 
     <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenAndDumplingsMainDish -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenAndDumplingsMainDish">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MainDish"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenFriedSteakMainDish -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenFriedSteakMainDish">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MainDish"/>
     </owl:Class>
     
@@ -963,6 +635,28 @@
         </rdfs:subClassOf>
         <skos:preflabel xml:lang="en">Chicken</skos:preflabel>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChiliPowderIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChiliPowderIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#HerbsAndSpicesIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description xml:lang="en">A spice mix consisting of a base of ancho chile powder most often combined with cumin, coriander, oregano, garlic, and black pepper, though particular spices may vary by region.</description>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChiliPowderIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">A spice mix consisting of a base of ancho chile powder most often combined with cumin, coriander, oregano, garlic, and black pepper, though particular spices may vary by region.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.foodnetwork.com/recipes/chili-powder-blend-recipe-1970427</citation>
+        <citation xml:lang="en">https://www.spendwithpennies.com/homemade-chili-powder/</citation>
+    </owl:Axiom>
     
 
 
@@ -984,7 +678,14 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Dried flower buds from the clove tree, a tropical evergreen.</description>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CloveIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Dried flower buds from the clove tree, a tropical evergreen.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.thespruceeats.com/cloves-765162</citation>
+    </owl:Axiom>
     
 
 
@@ -1014,8 +715,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Ground dried seeds from the cilantro plant.</description>
         <skos:preflabel xml:lang="en">Coriander</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CorianderIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Ground dried seeds from the cilantro plant.</owl:annotatedTarget>
+        <citation xml:lang="en">https://whatscookingamerica.net/cilantro.htm</citation>
+    </owl:Axiom>
     
 
 
@@ -1177,8 +885,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Dried, finely chopped leaves from the dill plant (a member of the Parsley family).</description>
         <skos:preflabel xml:lang="en">Dill</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DillIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Dried, finely chopped leaves from the dill plant (a member of the Parsley family).</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.thespruceeats.com/what-is-dill-995646</citation>
+    </owl:Axiom>
     
 
 
@@ -1249,8 +964,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Ground dried seeds from the mustard plant.</description>
         <skos:preflabel xml:lang="en">Dry Mustard</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Ground dried seeds from the mustard plant.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.thespruceeats.com/substitute-dry-mustard-for-prepared-mustard-995466</citation>
+    </owl:Axiom>
     
 
 
@@ -1675,8 +1397,16 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Dried, powdered cloves from the root bulb of the garlic plant.</description>
         <skos:preflabel xml:lang="en">Garlic Powder</skos:preflabel>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicPowderIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Dried, powdered cloves from the root bulb of the garlic plant.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.thespruceeats.com/how-to-make-your-own-garlic-powder-4155690</citation>
+        <citation xml:lang="en">https://www.westcoastseeds.com/blogs/garden-wisdom/garlic</citation>
+    </owl:Axiom>
     
 
 
@@ -2019,6 +1749,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MexicanOreganoIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MexicanOreganoIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#HerbsAndSpicesIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <description xml:lang="en">The dried leaves of the Mexican oregano plant (from the Verbenaceae family, which includes lemon verbena). Mexican oregano has a more citrusy, earthy undertone than traditional Italian oregano.</description>
+        <skos:preflabel xml:lang="en">Mexican Oregano</skos:preflabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MexicanOreganoIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">The dried leaves of the Mexican oregano plant (from the Verbenaceae family, which includes lemon verbena). Mexican oregano has a more citrusy, earthy undertone than traditional Italian oregano.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.mexicanplease.com/what-is-mexican-oregano/</citation>
+    </owl:Axiom>
+    
+
+
     <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild">
@@ -2115,7 +1867,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Medium"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">An 18-spice mix consisting of ingredients such as celery salt, red pepper, black pepper, and paprika that is most commonly used to spice seafood. The remaining 14 spices are classified.</description>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OldBayMixIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">An 18-spice mix consisting of ingredients such as celery salt, red pepper, black pepper, and paprika that is most commonly used to spice seafood. The remaining 14 spices are classified.</owl:annotatedTarget>
+        <citation xml:lang="en">https://www.coastalliving.com/food/what-is-in-old-bay-seasoning</citation>
+        <citation xml:lang="en">https://www.mccormick.com/old-bay/products/seasonings-and-sauces/old-bay-seasoning</citation>
+    </owl:Axiom>
     
 
 
@@ -2165,23 +1925,15 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <description xml:lang="en">Ground, dried root bulbs from the onion plant.</description>
         <skos:preflabel xml:lang="en">Onion Powder</skos:preflabel>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OreganoIngredient -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OreganoIngredient">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#HerbsAndSpicesIngredient"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSpiciness"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <skos:preflabel xml:lang="en">Oregano</skos:preflabel>
-    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionPowderIngredient"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#description"/>
+        <owl:annotatedTarget xml:lang="en">Ground, dried root bulbs from the onion plant.</owl:annotatedTarget>
+        <citation xml:lang="en">https://saltinmycoffee.com/how-to-make-onion-powder/</citation>
+    </owl:Axiom>
     
 
 
@@ -2257,29 +2009,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PicnicLunchMeal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FullMeal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkIngredient -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkIngredient">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MeatIngredient"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkRibIngredient -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkRibIngredient">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MeatIngredient"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#hasSpiciness"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Mild"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <skos:preflabel xml:lang="en">Pork Ribs</skos:preflabel>
     </owl:Class>
     
 
@@ -2483,14 +2212,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SpecialSteakMeal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SpecialSteakMeal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FullMeal"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Spiciness -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#Spiciness">
@@ -2550,14 +2271,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SmokedSalmonAndGoatCheeseSide"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SundayDinnerMeal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SundayDinnerMeal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FullMeal"/>
     </owl:Class>
     
 
@@ -2753,29 +2466,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AllspiceIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BayLeafIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BlackPepperIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CayennePepperIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CelerySeedIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CloveIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CorianderIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DillIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#DryMustardIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GarlicPowderIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OldBayMixIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OnionPowderIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#OreganoIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SaltIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SmokedPaprikaIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SweetPaprikaIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ThymeIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#VanillaExtractIngredient"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#AppleIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#KeyLimeIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#LemonIngredient"/>
@@ -2822,46 +2512,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#RollsSide"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SmokedSalmonAndGoatCheeseSide"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#WheatCrackersSide"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQChickenMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPorkRibsMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BBQPulledPorkMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BeefChiliMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BeefStewMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenAndDumplingsMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenFriedSteakMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CrawfishBoilMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FishStewMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FriedCatfishMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FriedChickenMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#FriedMulletMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GlazedHamMainDish"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ShrimpBoilMainDish"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BaconFatIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BaconIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#BeefRibIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CatfishIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ChickenIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CrabmeatIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#CrawfishIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#GroundBeefIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#HamIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#MulletIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#PorkRibIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SausageIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#ShrimpIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#SmokedSalmonIngredient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/southern-food#StewBeefIngredient"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
