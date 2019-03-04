@@ -7110,6 +7110,7 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#AppleIngredient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BananaIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BlackberriesIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BlueberriesIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#KeyLimeIngredient"/>
@@ -7176,6 +7177,7 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BakingPowderIngredient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BakingSodaIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BananaLiqueurIngredient"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#CannedBlackEyedPeas"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#CannedChiliBeansIngredient"/>
