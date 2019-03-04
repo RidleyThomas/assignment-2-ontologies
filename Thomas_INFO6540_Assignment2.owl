@@ -508,6 +508,11 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
             </owl:Restriction>
         </rdfs:subClassOf>
         <thomas-family-holiday-recipes:Definition xml:lang="en">Beans that have been baked in a homemade BBQ sauce.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">BBQBakedBeansSide</rdfs:label>
+        <skos:altLabel xml:lang="en">Baked Beans</skos:altLabel>
+        <skos:altLabel xml:lang="en">Barbecue Baked Beans</skos:altLabel>
+        <skos:altLabel xml:lang="en">Barbeque Baked Beans</skos:altLabel>
+        <skos:preflabel xml:lang="en">BBQ Baked Beans</skos:preflabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BBQBakedBeansSide"/>
@@ -1046,6 +1051,10 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
             </owl:Restriction>
         </rdfs:subClassOf>
         <thomas-family-holiday-recipes:Definition xml:lang="en">Simple black-eyed peas cooked with salt, pepper, and seasoned with Tabasco sauce. Eaten on the New Year to ensure luck throughout the year.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">BlackEyedPeasSide</rdfs:label>
+        <skos:altLabel xml:lang="en">Black-Eyed Peas</skos:altLabel>
+        <skos:altLabel xml:lang="en">Blackeyed Peas</skos:altLabel>
+        <skos:preflabel xml:lang="en">Black Eyed Peas</skos:preflabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#BlackEyedPeasSide"/>
@@ -2433,6 +2442,7 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">CrawfishBoilMainDish</rdfs:label>
         <rdfs:preflabel>Crawfish Boil</rdfs:preflabel>
         <skos:preflabel xml:lang="en">Whole crawfish boiled with salt and Old Bay Spice Mix.</skos:preflabel>
     </owl:Class>
@@ -2534,6 +2544,8 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#DairyAndEggIngredient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Ingredient"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Ingredients that are either dairy products (e.g. milk products) or egg products.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">DairyAndEggIngredient</rdfs:label>
         <skos:preflabel xml:lang="en">Dairy and Egg Ingredients</skos:preflabel>
     </owl:Class>
     
@@ -2673,7 +2685,7 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#DomainThing">
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#ValuePartition"/>
-        <thomas-family-holiday-recipes:Definition xml:lang="en">Things encompassing a domain.</thomas-family-holiday-recipes:Definition>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Things encompassing a domain of objects.</thomas-family-holiday-recipes:Definition>
         <rdfs:label xml:lang="en">DomainThing</rdfs:label>
         <skos:preflabel xml:lang="en">DomainThing</skos:preflabel>
     </owl:Class>
@@ -3443,6 +3455,9 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#FruitIngredient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Ingredient"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Ingredients that are fruits.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">FruitIngredient</rdfs:label>
+        <skos:preflabel xml:lang="en">Fruit Ingredients</skos:preflabel>
     </owl:Class>
     
 
@@ -3971,6 +3986,8 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#HerbsAndSpicesIngredient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Ingredient"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Ingredients that are herbs and spices.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">HerbsAndSpicesIngredient</rdfs:label>
         <skos:preflabel xml:lang="en">Herbs and Spices</skos:preflabel>
     </owl:Class>
     
@@ -4479,6 +4496,9 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#MeatIngredient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Ingredient"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Ingredients that are meat or meat (animal) products.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">MeatIngredient</rdfs:label>
+        <skos:preflabel xml:lang="en">Meat Ingredients</skos:preflabel>
     </owl:Class>
     
 
@@ -4923,6 +4943,10 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#PantryIngredient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Ingredient"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Shelf-stable ingredients and dry goods usually kept on the pantry and found in the middle aisles of the grocery store.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">PantryIngredient</rdfs:label>
+        <skos:altLabel xml:lang="en">Shelf-Stable Ingredients</skos:altLabel>
+        <skos:preflabel xml:lang="en">Pantry Ingredients</skos:preflabel>
     </owl:Class>
     
 
@@ -6761,6 +6785,9 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
 
     <owl:Class rdf:about="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#VegetableIngredient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Ingredient"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Ingredients that are vegetables.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">VegetableIngredient</rdfs:label>
+        <skos:preflabel xml:lang="en">Vegetable Ingredients</skos:preflabel>
     </owl:Class>
     
 
