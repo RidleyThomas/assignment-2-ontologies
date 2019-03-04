@@ -4011,6 +4011,7 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Food"/>
         <thomas-family-holiday-recipes:Definition xml:lang="en">Food with at least one ingredient that has a fat content of &quot;high fat.&quot;</thomas-family-holiday-recipes:Definition>
         <rdfs:label xml:lang="en">HighFatFood</rdfs:label>
+        <skos:altLabel xml:lang="en">High Fat Dishes</skos:altLabel>
         <skos:preflabel xml:lang="en">High Fat Food</skos:preflabel>
     </owl:Class>
     
@@ -6193,6 +6194,7 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Food"/>
         <rdfs:comment xml:lang="en">Food with at least one ingredient that has a spiciness value of &quot;hot.&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">SpicyFood</rdfs:label>
+        <skos:altLabel xml:lang="en">Spicy Dishes</skos:altLabel>
         <skos:preflabel xml:lang="en">Spicy Food</skos:preflabel>
     </owl:Class>
     
@@ -6747,6 +6749,10 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Food"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Food that does not contain any meat or meat products, dairy, egg, or honey.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">VeganFood</rdfs:label>
+        <skos:altLabel xml:lang="en">Vegan Dishes</skos:altLabel>
+        <skos:preflabel xml:lang="en">Vegan Food</skos:preflabel>
     </owl:Class>
     
 
@@ -6790,6 +6796,10 @@ https://creativecommons.org/licenses/by/3.0/</terms:license>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ridley/ontologies/2019/1/thomas-family-holiday-recipes#Food"/>
+        <thomas-family-holiday-recipes:Definition xml:lang="en">Food that does not contain meat or meat products.</thomas-family-holiday-recipes:Definition>
+        <rdfs:label xml:lang="en">VegetarianFood</rdfs:label>
+        <skos:altLabel xml:lang="en">Vegetarian Dishes</skos:altLabel>
+        <skos:preflabel xml:lang="en">Vegetarian Food</skos:preflabel>
     </owl:Class>
     
 
